@@ -1,0 +1,194 @@
+body {
+  background-color: #000;
+  margin: 0px;
+  color: #fff;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+}
+
+.header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("images/Netflix1.jpg");
+  margin: 0px;
+  width: 100%;
+  height: 100vh;
+  margin: 0px;
+  position: relative;
+  border-bottom: 10px solid #bbb;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 10px;
+  width: 100%;
+  height: 10vh;
+  margin: 5px 0px 20px 20px;
+}
+
+nav img {
+  padding: 5px 0px;
+  width: 15%;
+}
+
+.button {
+  position: absolute;
+  right: 10px;
+  border-radius: 4px;
+  background-color: #e50914;
+  color: white;
+  font-size: 20px;
+  padding: 4px 16px;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+}
+
+nav Select {
+  position: absolute;
+  right: 200px;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-size: 20px;
+}
+.background {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  display: flex;
+  justify-content: start;
+  margin-top: 30px;
+  flex-direction: column;
+  color: white;
+  text-align: center;
+  padding: 50px 0px;
+}
+.background h1 {
+  font-size: 40px;
+}
+.background h3 {
+  font-size: 20px;
+}
+.background p {
+  font-size: 20px;
+}
+.Register {
+  display: flex;
+  justify-content: center;
+  column-gap: 10px;
+}
+.email {
+  background: transparent;
+  border-radius: 3px;
+  padding: 24px 16px 10px;
+  width: 25%;
+}
+.x {
+  padding: 20px 20px;
+  margin-right: 25%;
+}
+.Email-Form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.Email-Form input {
+  font-size: 20px;
+  color: #fff;
+}
+
+hr {
+  display: inline block;
+  padding: 2px;
+  background-color: dimgray;
+}
+.features {
+  margin: 25px 15px;
+  width: 100%;
+}
+.row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  border-bottom: 10px solid #bbb;
+  justify-content: center;
+  height: 70vh;
+}
+.col-1 {
+  margin: auto;
+}
+.features h1 {
+  font-size: 50px;
+}
+.features p {
+  font-size: 20px;
+}
+.col-2 {
+  margin: auto;
+}
+
+.Img-col img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.Tv {
+  width: 40%;
+}
+
+.FAQ {
+  text-align: center;
+  position: relative;
+}
+
+.List {
+  margin: auto;
+  width: 60%;
+}
+
+.List li {
+  list-style: none;
+  width: 100%;
+}
+
+.List li label {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  font-size: 20px;
+  background-color: #303030;
+  cursor: pointer;
+  position: relative;
+}
+
+label::after {
+  content: "+";
+  font-size: 40px;
+  position: absolute;
+  right: 20px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+.List .content {
+  display: flex;
+  background-color: #303030;
+  text-align: left;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s, padding 0.5s;
+}
+.List div {
+  display: flex;
+}
+
+.List input[type="radio"]:checked + label + .content {
+  max-height: 600px;
+  padding: 30px 20px;
+}
+.content p {
+  font-size: 20px;
+}
